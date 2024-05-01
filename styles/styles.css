@@ -1,3 +1,109 @@
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* prevent iOS font size change */
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1;
+  text-rendering: optimizeSpeed;
+  font-family: "Roboto", sans-serif;
+}
+
+/* h1, h2, h3, h4 {
+     font-weight: inherit;
+} */
+ul {
+  list-style: none;
+}
+
+input, button {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border-radius: 10px;
+}
+
+img {
+  display: block;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: inherit;
+}
+
+.signup-illustration-container img {
+  width: 100%;
+}
+
+section.updates-container {
+  padding: 3em 1.5em;
+  color: hsl(235, 18%, 26%);
+}
+section.updates-container h1 {
+  font-size: 2.5em;
+}
+section.updates-container p {
+  margin: 1.5em auto;
+  line-height: 1.5;
+  font-weight: 400;
+}
+section.updates-container ul li {
+  display: flex;
+  align-items: start;
+  gap: 1.2em;
+}
+section.updates-container ul li p {
+  margin: 0 0 1em;
+}
+
+form.signup {
+  font-size: 16px;
+  margin-top: 1.5em;
+  /* FD5479 */
+}
+form.signup label {
+  color: hsl(234, 29%, 20%);
+  font-weight: 600;
+}
+form.signup input {
+  width: 100%;
+  padding: 1em 1.5em;
+  margin: 0.5em 0 1.5em;
+  border: 1px solid hsl(231, 7%, 60%);
+}
+form.signup input::-moz-placeholder {
+  color: hsl(231, 7%, 60%);
+}
+form.signup input::placeholder {
+  color: hsl(231, 7%, 60%);
+}
+form.signup button {
+  padding: 1.3em 0;
+  width: 100%;
+  text-align: center;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  cursor: pointer;
+}
+form.signup button:hover {
+  background: linear-gradient(to right, #FF5671, #FF673D);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

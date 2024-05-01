@@ -1,3 +1,121 @@
+$myFont:"Roboto", sans-serif;
+$myFontSize: 16px;
+$darkSlateGrey: hsl(234, 29%, 20%);
+$Tomato: hsl(4, 100%, 67%);
+$Tomato1: #FF5671;
+$Tomato2: #FF673D;
+$charcoalGrey: hsl(235, 18%, 26%);
+$Grey: hsl(231, 7%, 60%);
+$White: hsl(0, 0%, 100%);
+
+
+html {
+     box-sizing: border-box;
+     -webkit-text-size-adjust: 100%;
+ }
+*, *::before, *::after {
+     box-sizing: inherit;
+ }
+ 
+ 
+* {
+     margin: 0;
+     padding: 0;
+}
+ /* prevent iOS font size change */
+ 
+ 
+ body {
+     min-height: 100vh;
+     font-size: $myFontSize;
+     line-height: 1;
+     text-rendering: optimizeSpeed;
+     font-family: $myFont;
+ }
+ 
+/* h1, h2, h3, h4 {
+     font-weight: inherit;
+} */
+ 
+ 
+ul {
+     list-style: none;
+}
+ 
+input, button {
+     color: inherit;
+     font-size: inherit;
+     line-height: inherit;
+     border-radius: 10px;
+}
+ 
+img {
+     display: block;
+}
+ 
+a {
+     cursor: pointer;
+     text-decoration: inherit;
+}
+
+.signup-illustration-container {
+     img {
+          width: 100%;
+     }
+}
+
+section.updates-container {
+     padding: 3em 1.5em;
+     color: $charcoalGrey;
+     h1 {
+          font-size: 2.5em;
+     }
+     p {
+          margin: 1.5em auto;
+          line-height: 1.5;
+          font-weight: 400;
+     }
+     ul li {
+          display: flex;
+          align-items: start;
+          gap: 1.2em;
+          p {
+               margin: 0 0 1em;
+          }
+     }
+}
+
+form.signup {
+     font-size: $myFontSize;
+     margin-top: 1.5em;
+     label {
+          color: $darkSlateGrey;
+          font-weight: 600;
+     }
+     input {
+          width: 100%;
+          padding: 1em 1.5em;
+          margin: 0.5em 0 1.5em;
+          border: 1px solid $Grey;
+     }
+     input::placeholder {
+          color: $Grey;
+     }
+     button {
+          padding: 1.3em 0;
+          width: 100%;
+          text-align: center;
+          border: none;
+          background-color: $darkSlateGrey;
+          color: $White;
+          font-weight: 700;
+          cursor: pointer;
+     }
+     button:hover {
+          background: linear-gradient(to right, $Tomato1, $Tomato2);
+     }/* FD5479 */
+}
+
 .attribution {
      font-size: 11px;
      text-align: center;
