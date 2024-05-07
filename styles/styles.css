@@ -44,6 +44,11 @@ a {
   text-decoration: inherit;
 }
 
+.signup-illustration-container {
+  background: url(../assets/images/illustration-sign-up-mobile.svg);
+  height: 284px;
+  background-size: cover;
+}
 .signup-illustration-container img {
   width: 100%;
 }
@@ -111,4 +116,49 @@ form.signup button:hover {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 376px) and (max-width: 700px) {
+  .signup-illustration-container {
+    background-size: 100%;
+  }
+}
+@media screen and (min-width: 701px) {
+  .signup-illustration-container {
+    background-size: 75%;
+  }
+}
+@media screen and (width > 900px) {
+  body {
+    padding-top: 10%;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    background-color: hsl(234, 29%, 20%);
+  }
+  main {
+    width: min(950px, 90%);
+    border-radius: 30px;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    max-height: 700px;
+  }
+  .signup-illustration-container {
+    background: url(../assets/images/illustration-sign-up-desktop.svg);
+    height: 593px;
+    min-width: 400px;
+    /*   border-radius: 1em; */
+    background-size: 100% 100%;
+  }
+  section.updates-container {
+    max-width: 60%;
+    padding: 3em 4.5em 3em 2.5em;
+  }
+  section.updates-container h1 {
+    font-size: 3.5em;
+  }
 }/*# sourceMappingURL=styles.css.map */
