@@ -105,7 +105,8 @@ form.signup button {
   font-weight: 700;
   cursor: pointer;
 }
-form.signup button:hover {
+
+button:hover {
   background: linear-gradient(to right, #FF5671, #FF673D);
 }
 
@@ -128,6 +129,45 @@ form.signup button:hover {
     background-size: 75%;
   }
 }
+.signup-illustration-container, .updates-container, main, footer {
+  display: none;
+  visibility: hidden;
+}
+
+.successs-container {
+  min-height: 100vh;
+}
+.successs-container dialog {
+  height: inherit;
+  border: none;
+  color: hsl(234, 29%, 20%);
+  margin: 3em 1.5em 1em;
+}
+.successs-container dialog form {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+.successs-container dialog form h1 {
+  font-size: 2.5em;
+}
+.successs-container dialog form p {
+  line-height: 1.4;
+}
+.successs-container dialog form button {
+  padding: 1.3em 0;
+  width: 100%;
+  text-align: center;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 30vh;
+}
+
 @media screen and (width > 900px) {
   body {
     padding-top: 10%;
