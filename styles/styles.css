@@ -14,11 +14,13 @@ html {
 
 /* prevent iOS font size change */
 body {
-  min-height: 100vh;
+  overflow-y: scroll;
   font-size: 16px;
   line-height: 1;
   text-rendering: optimizeSpeed;
   font-family: "Roboto", sans-serif;
+  overflow: auto;
+  min-height: 100vh;
 }
 
 /* h1, h2, h3, h4 {
@@ -129,34 +131,33 @@ button:hover {
     background-size: 75%;
   }
 }
-.signup-illustration-container, .updates-container, main, footer {
+.hidden {
+  width: 0px;
+  height: 0px;
+  padding: 0;
   display: none;
   visibility: hidden;
 }
 
-.successs-container {
-  min-height: 100vh;
-}
-.successs-container dialog {
-  height: inherit;
+dialog {
   border: none;
   color: hsl(234, 29%, 20%);
-  margin: 3em 1.5em 1em;
+  padding: 3em 1.5em 1em;
 }
-.successs-container dialog form {
+dialog form {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2em;
 }
-.successs-container dialog form h1 {
+dialog form h1 {
   font-size: 2.5em;
 }
-.successs-container dialog form p {
+dialog form p {
   line-height: 1.4;
 }
-.successs-container dialog form button {
+dialog form button {
   padding: 1.3em 0;
   width: 100%;
   text-align: center;
@@ -170,14 +171,20 @@ button:hover {
 
 @media screen and (width > 900px) {
   body {
-    padding-top: 10%;
-    display: grid;
-    place-items: center;
-    gap: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
     background-color: hsl(234, 29%, 20%);
+    /* overflow: auto; */
   }
   main {
-    width: min(950px, 90%);
+    /*  position: absolute;
+     top:50%;
+     left: 50%;
+     transform: translate(-50%, -50%); */
+    width: min(900px, 90%);
     border-radius: 30px;
     padding: 20px;
     background-color: hsl(0, 0%, 100%);
@@ -196,9 +203,34 @@ button:hover {
   }
   section.updates-container {
     max-width: 60%;
-    padding: 3em 4.5em 3em 2.5em;
+    padding: 3em 3em 3em 2em;
   }
   section.updates-container h1 {
-    font-size: 3.5em;
+    font-size: 3em;
+  }
+}
+@media screen and (width >= 768px) {
+  dialog {
+    /*  padding: 1.5em;
+     position: absolute;
+     top:50%;
+     left: 50%;
+     transform: translate(-50%, -50%); */
+    background-color: hsl(234, 29%, 20%);
+    overflow: auto;
+    width: 100vw;
+  }
+  dialog form {
+    padding: 10px;
+    margin: 30px auto;
+    height: 400px;
+    width: 400px;
+    background-color: hsl(0, 0%, 100%);
+    min-height: 0;
+    justify-content: flex-start;
+    border-radius: 15px;
+  }
+  dialog form button {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
