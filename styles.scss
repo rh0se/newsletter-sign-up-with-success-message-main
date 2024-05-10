@@ -93,6 +93,10 @@ section.updates-container {
 form.signup {
      font-size: $myFontSize;
      margin-top: 1.5em;
+     div {
+          display: flex;
+          justify-content: space-between;
+     }
      label {
           color: $darkSlateGrey;
           font-weight: 600;
@@ -154,7 +158,9 @@ button:hover {
 dialog {
      border: none;
      color: $darkSlateGrey;
-     padding: 3em 1.5em 1em;
+     padding: 3em 1.5em 0.3em;
+     min-width: 100%;
+     min-height: 100%;
      form {
           min-height: 100vh;
           display: flex;
@@ -235,7 +241,8 @@ dialog {
           transform: translate(-50%, -50%); */
           background-color: $darkSlateGrey;
           overflow: auto;
-          width: 100vw;
+          min-width: 100%;
+          min-height: 100%;
           form {
                padding: 10px;
                margin: 30px auto;

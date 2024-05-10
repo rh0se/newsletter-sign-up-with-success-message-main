@@ -81,6 +81,10 @@ form.signup {
   margin-top: 1.5em;
   /* FD5479 */
 }
+form.signup div {
+  display: flex;
+  justify-content: space-between;
+}
 form.signup label {
   color: hsl(234, 29%, 20%);
   font-weight: 600;
@@ -142,7 +146,9 @@ button:hover {
 dialog {
   border: none;
   color: hsl(234, 29%, 20%);
-  padding: 3em 1.5em 1em;
+  padding: 3em 1.5em 0.3em;
+  min-width: 100%;
+  min-height: 100%;
 }
 dialog form {
   min-height: 100vh;
@@ -219,7 +225,8 @@ dialog form button {
      transform: translate(-50%, -50%); */
     background-color: hsl(234, 29%, 20%);
     overflow: auto;
-    width: 100vw;
+    min-width: 100%;
+    min-height: 100%;
   }
   dialog form {
     padding: 10px;
