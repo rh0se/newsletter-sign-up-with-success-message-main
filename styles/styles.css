@@ -1,3 +1,7 @@
+:export {
+  Grey: hsl(231, 7%, 60%);
+}
+
 html {
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
@@ -114,6 +118,24 @@ form.signup button {
 
 button:hover {
   background: linear-gradient(to right, #FF5671, #FF673D);
+}
+
+form.errorForm div span {
+  color: #dd847f;
+  font-weight: 700;
+}
+form.errorForm input {
+  border: 1px solid red;
+  background-color: #FFE8E6;
+  color: #DC9C9A;
+  font-weight: 700;
+}
+form.errorForm input:-webkit-autofill, form.errorForm input:-webkit-autofill:hover, form.errorForm input:-webkit-autofill:focus, form.errorForm input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  box-shadow: 0 0 0 1000px #FFE8E6 inset;
+  -webkit-text-fill-color: #DC9C9A;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .attribution {

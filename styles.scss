@@ -8,7 +8,9 @@ $charcoalGrey: hsl(235, 18%, 26%);
 $Grey: hsl(231, 7%, 60%);
 $White: hsl(0, 0%, 100%);
 $assetPath :"../assets/images";
-
+:export {
+     Grey: $Grey;
+}
 html {
      box-sizing: border-box;
      -webkit-text-size-adjust: 100%;
@@ -33,7 +35,9 @@ html {
      font-family: $myFont;
      overflow: auto;
      min-height: 100vh;
- }
+}
+
+
  
 /* h1, h2, h3, h4 {
      font-weight: inherit;
@@ -124,6 +128,27 @@ form.signup {
 }
 button:hover {
      background: linear-gradient(to right, $Tomato1, $Tomato2);
+}
+
+form.errorForm {
+     div {
+          span {
+              color: #dd847f;
+              font-weight: 700;
+          }
+     }
+     input {
+          border: 1px solid red;
+          background-color: #FFE8E6;
+          color: #DC9C9A;
+          font-weight: 700;
+     }
+     input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+          -webkit-background-clip: text;
+          box-shadow: 0 0 0 1000px #FFE8E6 inset;
+       -webkit-text-fill-color: #DC9C9A;
+          transition: background-color 5000s ease-in-out 0s;
+     }
 }
 
 .attribution {
