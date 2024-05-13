@@ -203,6 +203,7 @@ dialog form button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 2em;
     background-color: hsl(234, 29%, 20%);
     /* overflow: auto; */
@@ -239,6 +240,9 @@ dialog form button {
   }
 }
 @media screen and (width >= 768px) {
+  dialog:not([open]) {
+    display: none;
+  }
   dialog {
     /*  padding: 1.5em;
      position: absolute;
@@ -249,16 +253,23 @@ dialog form button {
     overflow: auto;
     min-width: 100%;
     min-height: 100%;
+    display: grid;
+    align-content: space-evenly;
+    justify-content: center;
   }
   dialog form {
-    padding: 10px;
-    margin: 30px auto;
-    height: 400px;
+    /* float: left; */
+    /*  margin: 10px auto; */
+    padding: 2em 2.5em;
+    min-height: 400px;
     width: 400px;
     background-color: hsl(0, 0%, 100%);
-    min-height: 0;
     justify-content: flex-start;
     border-radius: 15px;
+    gap: 1.5em;
+  }
+  dialog form p {
+    font-size: 0.9em;
   }
   dialog form button {
     margin-top: 0;
