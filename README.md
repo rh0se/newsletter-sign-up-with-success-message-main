@@ -14,9 +14,9 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
+
 
 ## Overview
 
@@ -34,15 +34,18 @@ Users should be able to:
 
 ### Screenshot
 - Desktop View
+
 ![](./assets/images/Screenshot.png)
 
 - Mobile View
+
+
 ![](./assets/images/mobile-Screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution](https://github.com/rh0se/newsletter-sign-up-with-success-message-main)
+- Live Site URL: [live site](https://rh0se.github.io/newsletter-sign-up-with-success-message-main/)
 
 ## My process
 
@@ -93,10 +96,4 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 - LinkedIn - [Rhoda Ojetola](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
