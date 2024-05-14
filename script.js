@@ -29,7 +29,7 @@ const checkEmail = () => {
         /* emailInput.style.border = `1px solid ${Grey}` */;
         successEmail.innerText = `${emailInput.value}`;
         mainPage.classList.toggle("hidden");
-        successDialog.showModal()
+        successDialog.showModal();
     }
 }
 
@@ -42,6 +42,7 @@ subscribeBtn.addEventListener("click", (e) => {
 
 successBtn.addEventListener("click", (e) => {
     successDialog.close();
+    emailInput.value ="";
     mainPage.classList.toggle("hidden");
 })
 
