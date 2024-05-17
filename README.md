@@ -59,26 +59,33 @@ Users should be able to:
 
 
 ### What I learned
+- DOM Manipulation:
+The success state, where users see a message after submitting the form, allowed me to practice DOM manipulation.
 
+I used JavaScript to dynamically update the content based on user input.
 
+- CSS Styling and Layout
+Adapting the layout for different screen sizes (responsive design) was crucial.
+
+- Dialog Element:
+The challenge introduced me to the ```<dialog>``` element.
+I explored its usage for displaying success messages and handling user interactions.
+
+- Attention to Detail:
+Matching my solution as closely as possible to the provided design helped me train my eye for detail.
+I paid attention to fonts, colors, spacing, and alignment.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<dialog>
+  <form method="dialog"></form>
+  </dialog>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+  dialog:not([open]){
+          display:none;
+     }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
@@ -93,7 +100,7 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ## Author
 
-- LinkedIn - [Rhoda Ojetola](https://www.your-site.com)
+- LinkedIn - [Rhoda Ojetola](https://www.linkedin.com/in/rhoda-ojetola/)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+
 
