@@ -184,7 +184,7 @@ dialog form {
   justify-content: center;
   gap: 2em;
 }
-dialog form h1 {
+dialog form h2 {
   font-size: 2.5em;
 }
 dialog form p {
@@ -240,7 +240,7 @@ dialog form button {
     max-width: 60%;
     padding: 3em 3em 3em 2em;
   }
-  section.updates-container h1 {
+  section.updates-container h2 {
     font-size: 3em;
   }
 }
