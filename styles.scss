@@ -73,26 +73,30 @@ a {
           width: 100%;
      }
 }
-
-section.updates-container {
+h1 {
+     font-size: 2.5em;
+}
+div.updates-container {
      padding: 3em 1.5em;
      color: $charcoalGrey;
-     h1 {
-          font-size: 2.5em;
-     }
-     p {
-          margin: 1.5em auto;
-          line-height: 1.5;
-          font-weight: 400;
-     }
-     ul li {
-          display: flex;
-          align-items: start;
-          gap: 1.2em;
-          p {
-               margin: 0 0 1em;
+     section {
+          h2 {
+               font-size: $myFontSize;
+               margin: 1.5em auto;
+               line-height: 1.5;
+               font-weight: 400;
+          }
+          ul li {
+               display: flex;
+               align-items: start;
+               gap: 1.2em;
+               p {
+                    margin: 0 0 1em;
+               }
           }
      }
+     
+     
 }
 
 form.signup {
@@ -252,12 +256,13 @@ dialog {
         /*   border-radius: 1em; */
           background-size: 100% 100%;
      }
-     section.updates-container{
+     h1 {
+          font-size: 3.5em;
+     }
+     div.updates-container{
           max-width: 60%;
-          padding: 3em 3em 3em 2em;
-          h2 {
-               font-size: 3em;
-          }
+          padding: 2.5em 3em 2.5em 2em;
+          
      }
 }
 
