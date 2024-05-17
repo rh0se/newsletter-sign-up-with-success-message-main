@@ -34,4 +34,10 @@ successBtn.addEventListener("click", (e) => {
     mainPage.classList.toggle("hidden");
 })
 
+emailInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      checkEmail();
+      e.preventDefault();
+    };
+})
 
