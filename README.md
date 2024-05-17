@@ -60,11 +60,9 @@ Users should be able to:
 
 ### What I learned
 - DOM Manipulation:
-The success state, where users see a message after submitting the form, allowed me to practice DOM manipulation.
+The success state, where users see a message after submitting the form, allowed me to practice DOM manipulation. I used JavaScript to dynamically update the content based on user input.
 
-I used JavaScript to dynamically update the content based on user input.
-
-- CSS Styling and Layout
+- CSS Styling and Layout:
 Adapting the layout for different screen sizes (responsive design) was crucial.
 
 - Dialog Element:
@@ -88,7 +86,11 @@ I paid attention to fonts, colors, spacing, and alignment.
 
 
 ### Continued development
+- Responsive Design Refinement:
+I’ll practice making my designs more responsive.Testing across various devices and screen sizes will help me create adaptable layouts.
 
+- JavaScript Proficiency: 
+I plan to deepen my understanding of JavaScript. Exploring more complex interactions, form validation, and dynamic content will be my focus.
 
 
 ### Useful resources
@@ -101,6 +103,6 @@ I paid attention to fonts, colors, spacing, and alignment.
 ## Author
 
 - LinkedIn - [Rhoda Ojetola](https://www.linkedin.com/in/rhoda-ojetola/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@rh0se](https://www.frontendmentor.io/profile/rh0se)
 
 
